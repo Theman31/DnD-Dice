@@ -12,7 +12,16 @@ class DTen extends React.Component {
   ButtonClicked() {
     let d10Roll = Math.floor(Math.random() * 10 + 1);
     let answer = d10Roll;
-    let preEmp = "Your D10 rolled ";
+    let preEmp;
+    if (answer == 10) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D10 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

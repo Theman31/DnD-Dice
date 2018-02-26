@@ -12,7 +12,16 @@ class DTwenty extends React.Component {
   ButtonClicked() {
     let d20Roll = Math.floor(Math.random() * 20 + 1);
     let answer = d20Roll;
-    let preEmp = "Your D20 rolled ";
+    let preEmp;
+    if (answer == 20) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D20 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

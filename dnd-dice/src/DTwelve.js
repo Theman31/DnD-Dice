@@ -12,7 +12,16 @@ class DTwelve extends React.Component {
   ButtonClicked() {
     let d12Roll = Math.floor(Math.random() * 12 + 1);
     let answer = d12Roll;
-    let preEmp = "Your D12 rolled ";
+    let preEmp;
+    if (answer == 12) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D12 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

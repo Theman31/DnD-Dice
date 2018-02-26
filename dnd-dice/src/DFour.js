@@ -12,7 +12,16 @@ class DFour extends React.Component {
   ButtonClicked() {
     let d4Roll = Math.floor(Math.random() * 4 + 1);
     let answer = d4Roll;
-    let preEmp = "Your D4 rolled ";
+    let preEmp;
+    if (answer == 4) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D4 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

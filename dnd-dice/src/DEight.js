@@ -12,7 +12,16 @@ class DEight extends React.Component {
   ButtonClicked() {
     let d8Roll = Math.floor(Math.random() * 8 + 1);
     let answer = d8Roll;
-    let preEmp = "Your D8 rolled ";
+    let preEmp;
+    if (answer == 8) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D8 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

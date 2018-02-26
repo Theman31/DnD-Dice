@@ -12,7 +12,16 @@ class DSix extends React.Component {
   ButtonClicked() {
     let d6Roll = Math.floor(Math.random() * 6 + 1);
     let answer = d6Roll;
-    let preEmp = "Your D6 rolled ";
+    let preEmp;
+    if (answer == 6) {
+      preEmp = "Hell Yeah!! Nat ";
+    }
+    else if (answer == 1) {
+      preEmp = "Bummer, That's a Nat ";
+    }
+    else {
+      preEmp = "Your D6 rolled ";
+    }
     this.setState({
       yourRoll: answer,
       leadIn: preEmp

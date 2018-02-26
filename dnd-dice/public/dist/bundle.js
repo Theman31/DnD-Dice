@@ -19018,7 +19018,14 @@ var DTwenty = function (_React$Component) {
     value: function ButtonClicked() {
       var d20Roll = Math.floor(Math.random() * 20 + 1);
       var answer = d20Roll;
-      var preEmp = "Your D20 rolled ";
+      var preEmp = void 0;
+      if (answer == 20) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D20 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
@@ -19095,7 +19102,14 @@ var DEight = function (_React$Component) {
     value: function ButtonClicked() {
       var d8Roll = Math.floor(Math.random() * 8 + 1);
       var answer = d8Roll;
-      var preEmp = "Your D8 rolled ";
+      var preEmp = void 0;
+      if (answer == 8) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D8 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
@@ -20060,7 +20074,14 @@ var DTwelve = function (_React$Component) {
     value: function ButtonClicked() {
       var d12Roll = Math.floor(Math.random() * 12 + 1);
       var answer = d12Roll;
-      var preEmp = "Your D12 rolled ";
+      var preEmp = void 0;
+      if (answer == 12) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D12 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
@@ -20137,7 +20158,14 @@ var DTen = function (_React$Component) {
     value: function ButtonClicked() {
       var d10Roll = Math.floor(Math.random() * 10 + 1);
       var answer = d10Roll;
-      var preEmp = "Your D10 rolled ";
+      var preEmp = void 0;
+      if (answer == 10) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D10 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
@@ -20214,7 +20242,14 @@ var DSix = function (_React$Component) {
     value: function ButtonClicked() {
       var d6Roll = Math.floor(Math.random() * 6 + 1);
       var answer = d6Roll;
-      var preEmp = "Your D6 rolled ";
+      var preEmp = void 0;
+      if (answer == 6) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D6 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
@@ -20291,7 +20326,14 @@ var DFour = function (_React$Component) {
     value: function ButtonClicked() {
       var d4Roll = Math.floor(Math.random() * 4 + 1);
       var answer = d4Roll;
-      var preEmp = "Your D4 rolled ";
+      var preEmp = void 0;
+      if (answer == 4) {
+        preEmp = "Hell Yeah!! Nat ";
+      } else if (answer == 1) {
+        preEmp = "Bummer, That's a Nat ";
+      } else {
+        preEmp = "Your D4 rolled ";
+      }
       this.setState({
         yourRoll: answer,
         leadIn: preEmp
