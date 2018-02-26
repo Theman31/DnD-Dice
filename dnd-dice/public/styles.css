@@ -1,4 +1,19 @@
+#TopSide {
+text-align: center;
+}
+h1 {
+}
 body {
-  background-color: green;
+  background-image: url(D&D_Background_2.jpg);
+  background-size: 110%;
+  text-align: left;
+  color: white;
+}
+p {
   text-align: center;
+  font-size: 25px;
+  border-style: solid;
+  border-radius: 300px;
+  border-color: maroon;
+  border-width: medium;
 }
