@@ -4,16 +4,34 @@ text-align: center;
 h1 {
 }
 body {
-  background-image: url(D&D_Background_2.jpg);
-  background-size: 110%;
+  background-position: top;
+  background-color: grey;
+  background-image: url(DnD_BG.png);
+  background-size: 115%;
   text-align: left;
-  color: white;
+  color: black;
+}
+#Answer {
+  /*text-align: center;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: maroon;
+  border-width: small;
+  border-spacing: inherit;*/
 }
 p {
   text-align: center;
   font-size: 25px;
-  border-style: solid;
-  border-radius: 300px;
-  border-color: maroon;
-  border-width: medium;
+}
+#DTwelve {
+  text-align: right;
+}
+#DEight {
+  text-align: right;
+}
+#DFour {
+  text-align: right;
+}
+#StatBlock {
+  text-align: right;
 }
