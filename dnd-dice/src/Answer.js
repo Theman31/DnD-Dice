@@ -25,5 +25,10 @@ class Answer extends React.Component {
     }
   }
 
+
+  render() {
+    return(
+      <div></div>
+    )
+  }
 }
-render(<Answer/>, document.getElementById('Answer') )

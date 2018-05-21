@@ -5,35 +5,38 @@ class DEight extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      leadIn: "",
-      yourRoll: ""
+      dEightLeadIn: "",
+      yourRoll: "",
+      dEightResult: ""
+
     }
   }
   ButtonClicked() {
     let d8Roll = Math.floor(Math.random() * 8 + 1);
-    let answer = d8Roll;
+    let d8Answer = d8Roll;
     let preEmp;
-    if (answer == 8) {
+    if (d8Answer == 8) {
       preEmp = "Hell Yeah!! Nat ";
     }
-    else if (answer == 1) {
+    else if (d8Answer == 1) {
       preEmp = "Bummer, That's a Nat ";
     }
     else {
       preEmp = "Your D8 rolled ";
     }
     this.setState({
-      yourRoll: answer,
-      leadIn: preEmp
+      yourRoll: d8Answer,
+      dEightLeadIn: preEmp,
+      dEightResult: this.state.dEightLeadIn + this.state.yourRoll
     });
-    console.log(answer);
+    console.log(d8Answer);
   }
 
   render() {
+    
     return (
       <div>
       <button className= 'inputs' onClick = {this.ButtonClicked.bind(this)}>Roll D8</button>
-      <p>{this.state.leadIn + this.state.yourRoll}</p>
       </div>
     )
   }
